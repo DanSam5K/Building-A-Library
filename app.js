@@ -1,3 +1,6 @@
+// classes of library with
+//parent class
+
 class Media {
     constructor(title){
         this._title = title;
@@ -35,7 +38,7 @@ class Media {
        this._ratings.push(ratings);
      }
   }
-  
+  // sub class 1
   class Book extends Media {
     constructor(author, title, pages){
         super(title);
@@ -50,7 +53,7 @@ class Media {
     }
   }
   
-  
+  // sub class 2
   class Movie extends Media {
     constructor(director, title, runTime){
         super(title);
@@ -65,7 +68,7 @@ class Media {
     }
   }
   
-  
+  //sub class 3s
   class CD extends Media {
     constructor(){
   
