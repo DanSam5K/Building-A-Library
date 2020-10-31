@@ -70,8 +70,21 @@ class Media {
   
   //sub class 3s
   class CD extends Media {
-    constructor(){
+    constructor(artist, title, songs){
+      super(title);
+      this._artist = artist;
+      this._songs = songs;
+    }
+    get artist(){
+      return this._artist;
+    }
+    get songs(){
+      return this._songs;
+    }
   
+    shuffle(){
+      const randomSong = Math.floor(Math.random() * this.songs.length);
+      return songs[randomSong];
     }
   }
   
